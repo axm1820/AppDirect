@@ -23,7 +23,11 @@ public class AppDirectRegistrationPage extends AppDirectHomePageTest {
 	       new Object[] {"......xxx...."},
 	     };
 	   }	
-	 
+	  /*
+	   * Some basic setup is done in the previous class
+	   * adding a few steps here for signup
+	   * 
+	   */
 	  @BeforeTest
 	  public void Setup() {
 		    WebElement Signup= driver.findElement(By.linkText("Sign Up"));
@@ -31,7 +35,11 @@ public class AppDirectRegistrationPage extends AppDirectHomePageTest {
 			System.out.println(url);
 			Signup.click(); 
       }
-	 
+	 /*
+	  * 
+	  * (non-Javadoc)
+	  * @see pkg.AppDirectHomePageTest#signup(java.lang.String)
+	  */
 	 @Test(dataProvider = "emailaddress")
 	 public void signup(String emailaddress) {
 		     
@@ -45,7 +53,10 @@ public class AppDirectRegistrationPage extends AppDirectHomePageTest {
 		    WebElement Signup= driver.findElement(By.linkText("Sign Up"));
 		    Signup.click(); 
 		   }
-	
+	 /*
+	  * 
+	  * 
+	  */
 
       @AfterTest
       public void teardown() {
