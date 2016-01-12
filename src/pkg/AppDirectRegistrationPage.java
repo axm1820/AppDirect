@@ -54,7 +54,7 @@ public class AppDirectRegistrationPage extends AppDirectHomePageTest {
 		    Signup.click(); 
 		   }
 	 /*
-	  * 
+	  * Teardown after running all the tests
 	  * 
 	  */
 
